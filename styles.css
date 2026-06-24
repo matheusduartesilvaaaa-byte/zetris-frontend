@@ -1,0 +1,32 @@
+/* Customizações finas para o ecossistema Zetris */
+
+/* Animação suave para as transições de foco e hover */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/* Customização da barra de rolagem para combinar com o tema Dark */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827; /* gray-900 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4b5563; /* gray-600 */
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed; /* purple-600 */
+}
+
+/* Efeito de vidro para inputs e cards (Glow discreto) */
+.glass-input:focus {
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.15);
+}
